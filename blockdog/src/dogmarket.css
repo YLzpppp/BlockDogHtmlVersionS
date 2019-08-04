@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body,html{
+    font-size: 12px;
+}
+body{
+    background: #282834;
+    position: relative;
+}
+#app2{
+    position: relative;
+}
+.homelogo{
+    width: 100%;
+}
+.homelogo img{
+    display: block;
+    width: 37.8%;
+    object-fit: contain;
+    object-position: center;
+}
+.botnav{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.botnav img{
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.botnavholder{
+    width: 100%;
+    height: 70px;
+}
+#banner {
+    display: block;
+    width: 95%;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto;
+}
+.cardcontainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+.active {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.86);
+}
+.success{
+    width: 68%;
+    margin: -38% 16% 0 16%;
+    position: fixed;
+    top: 50%;
+}
+.success img{
+    object-position: center;
+    object-fit: contain;
+    display: block;
+    width: 100%;
+}
+#flip{
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    width: 100%;
+}
+@keyframes flipx {
+    0%{ transform: rotateX(0)}
+    100%{ transform: rotateX(360deg);}
+}
+@keyframes flipy {
+    from{ transform: rotateY(0);}
+    to{ transform: rotateY(360deg);}
+}
+.flipcx{
+    animation: flipx 1.8s linear;
+}
+.flipcy{
+    animation: flipy 1.8s linear;
+}
+
+#flipbox{
+    background: rgb(255,195,88);position: fixed;top: 50%;margin:-38% 17% 0 17%;width:66%;
+}
+@media screen and (min-width: 378px) and (max-width: 450px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+    }
+
+    body{
+        background: #282834;
+        position: relative;
+    }
+    #app2{
+        position: relative;
+    }
+    .homelogo{
+        width: 100%;
+    }
+    .homelogo img{
+        display: block;
+        width: 37.8%;
+        object-fit: contain;
+        object-position: center;
+    }
+    .botnav{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+    .botnav img{
+        display: block;
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+    .botnavholder{
+        width: 100%;
+        height: 60px;
+    }
+    #banner {
+        display: block;
+        width: 95%;
+        object-fit: contain;
+        object-position: center;
+        margin: 0 auto;
+    }
+    .cardcontainer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 96%;
+        margin: 0 auto;
+    }
+    .active {
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.86);
+    }
+    .success{
+        width: 68%;
+        margin: -38% 16% 0 16%;
+        position: fixed;
+        top: 50%;
+    }
+    .success img{
+        object-position: center;
+        object-fit: contain;
+        display: block;
+        width: 100%;
+    }
+    #flip{
+        object-fit: contain;
+        object-position: center;
+        display: block;
+        width: 100%;
+    }
+    @keyframes flipx {
+        0%{ transform: rotateX(0)}
+        100%{ transform: rotateX(360deg);}
+    }
+    @keyframes flipy {
+        from{ transform: rotateY(0);}
+        to{ transform: rotateY(360deg);}
+    }
+    .flipcx{
+        animation: flipx 1.8s linear;
+    }
+    .flipcy{
+        animation: flipy 1.8s linear;
+    }
+
+    #flipbox{
+        background: rgb(255,195,88);position: fixed;top: 50%;margin:-38% 17% 0 17%;width:66%;
+    }
+}
+
+@media screen and (max-width: 378px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+
+    body{
+        background: #282834;
+        position: relative;
+    }
+    #app2{
+        position: relative;
+    }
+    .homelogo{
+        width: 100%;
+    }
+    .homelogo img{
+        display: block;
+        width: 37.8%;
+        object-fit: contain;
+        object-position: center;
+    }
+    .botnav{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+    .botnav img{
+        display: block;
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+    .botnavholder{
+        width: 100%;
+        height: 60px;
+    }
+    #banner {
+        display: block;
+        width: 95%;
+        object-fit: contain;
+        object-position: center;
+        margin: 0 auto;
+    }
+    .cardcontainer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 96%;
+        margin: 0 auto;
+    }
+    .active {
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.86);
+    }
+    .success{
+        width: 68%;
+        margin: -38% 16% 0 16%;
+        position: fixed;
+        top: 50%;
+    }
+    .success img{
+        object-position: center;
+        object-fit: contain;
+        display: block;
+        width: 100%;
+    }
+    #flip{
+        object-fit: contain;
+        object-position: center;
+        display: block;
+        width: 100%;
+    }
+    @keyframes flipx {
+        0%{ transform: rotateX(0)}
+        100%{ transform: rotateX(360deg);}
+    }
+    @keyframes flipy {
+        from{ transform: rotateY(0);}
+        to{ transform: rotateY(360deg);}
+    }
+    .flipcx{
+        animation: flipx 1.8s linear;
+    }
+    .flipcy{
+        animation: flipy 1.8s linear;
+    }
+
+    #flipbox{
+        background: rgb(255,195,88);position: fixed;top: 50%;margin:-38% 17% 0 17%;width:66%;
+    }
+
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+       <mapper namespace="lzp.entity.AccountMapper">
+       
+       <!-- 
+       		public String queryNameByIp(String ip);
+       		通过IP 查询用户名 
+        -->
+       		<select id="queryNameByIp" resultType="lzp.entity.Account">
+       			select * from blockdogaccount where ip = #{ip}
+       		</select>
+       		
+       		<!--
+       		 public void updateTimeByIp(Map<String,String> map); 
+       		 根据IP地址更新抢狗请求的时间
+       		 -->
+       		 <update id="updateTimeByIp" parameterType="lzp.entity.Account">
+       		 	update blockdogaccount set lasttime = #{lasttime} where ip = #{ip}
+       		 </update>
+       		 
+       		 <!-- 
+       		 public void updateIpByAccount(String account ); 
+       		 根据账号名更新IP地址
+       		 -->
+       		 <update id="updateIpByAccount" parameterType="lzp.entity.Account">
+       		 	update blockdogaccount set ip = #{ip} where account = #{account}
+       		 </update>
+
+			<!--
+ 			public String queryPasswordByAccount(String acc);
+ 			根据账号查询密碼
+ 			 -->
+ 			 <select id="queryPasswordByAccount" resultType="string">
+ 			 select password from blockdogaccount where account=#{account}
+ 			 </select>
+ 			 
+ 			<!--  
+ 			public String queryNameByAccount(String acc); 
+ 			根据账号查用户名
+ 			-->
+ 			<select id="queryNameByAccount" resultType="string">
+ 			select name from blockdogaccount where account=#{account}
+ 			</select>
+       </mapper>
+       
+       
+       
+       
+       
+       
+       
+       

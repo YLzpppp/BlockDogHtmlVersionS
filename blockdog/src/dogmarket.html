@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-animationend="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0 , user-scalable=no">
+    <title>狗狗集市</title>
+</head>
+<body>
+
+<div id="app2">
+    <div class="homelogo" :style="{marginTop :logomt+'px',marginBottom:logomt+'px'}">
+        <img ref="logo" src="./img/homelogo272x73.png" alt="lost" style="margin-left: auto;margin-right: auto">
+    </div>
+    <div style="width: 100%;">
+        <img id="banner" src="./img/676x176banner.png" alt="lost">
+    </div>
+    <div class="cardcontainer">
+        <dogcard v-for="dog in datalists" v-bind:doginfo="dog" v-bind:key="dog.adopttime" v-on:flipnow="doflip"></dogcard>
+        <div class="botnavholder"></div>
+    </div>
+    <div class="botnav">
+        <img src="./img/botnav72093.png" alt="lost">
+    </div>
+
+    <div class="active" v-if="isActive">
+        <div  v-animationend="{animationfunc}" v-if="!dogetdog" id='flipbox' :class="{'flipcx':isFlipx,'flipcy':isFlipy}" :style="{width:'60%',height: flipboxh+'px'}">
+        </div>
+        <div v-if="dogetdog" @click="igetdog" class="success">
+            <img src="./img/success.png" alt="lost">
+        </div>
+    </div>
+
+</div>
+
+
+<script src="/dogmarket.bundle.js"></script>
+</body>
+</html>

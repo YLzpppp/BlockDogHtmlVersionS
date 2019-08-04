@@ -1,0 +1,36 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: #13131f;
+    font-size: 12px;
+}
+.toplogo{
+    width: 100%;
+}
+.botcontainer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.botlogo{
+    width: 100%;
+}
+.botp{
+    display: block;
+    color: #a7a7a9;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.toplogo img{
+    display: block;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+}
+.botlogo img{
+    display: block;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+}
